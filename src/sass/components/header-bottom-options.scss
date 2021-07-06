@@ -1,0 +1,56 @@
+.header-bottom-options__list {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+  font-family: $montserrat-font;
+  font-weight: 700;
+}
+.header-bottom-options__item {
+  border-top: $main-color solid 7px;
+  height: 375px;
+  width: 25%;
+  background-color: $dark-blue-color;
+  position: relative;
+}
+.header-bottom-options__item:nth-child(even) {
+  border-top: $white-color solid 7px;
+  background-color: $main-color;
+}
+.header-bottom-options__text {
+  text-transform: uppercase;
+  font-size: 20px;
+  position: absolute;
+  left: 20%;
+  top: 60%;
+}
+.even-option {
+  color: $main-color;
+}
+.header-bottom-options__item::after {
+  content: '';
+  display: block;
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 50%;
+  top: 50%;
+  transform: translate(-15%, -50%);
+  height: 80px;
+  width: 100%;
+}
+.header-bottom-options__item:first-child::after {
+  background-image: url('../../images/Forma1.png');
+}
+.header-bottom-options__item:nth-child(2)::after {
+  background-image: url('../../images/Forma2.png');
+}
+.header-bottom-options__item:nth-child(3)::after {
+  background-image: url('../../images/Forma3.png');
+}
+.header-bottom-options__item:last-child::after {
+  background-image: url('../../images/Forma4.png');
+}

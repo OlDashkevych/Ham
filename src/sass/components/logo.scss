@@ -1,0 +1,25 @@
+.logo-title {
+  color: $white-color;
+  line-height: 64px;
+  font-size: 32px;
+  margin-left: 70px;
+  position: relative;
+  font-family: $montserrat-font;
+  font-weight: 300;
+}
+.logo__modif {
+  color: $main-color;
+  font-weight: 700;
+}
+.logo-title::after {
+  content: '';
+  position: absolute;
+
+  background-image: url('../../images/logo.png');
+  display: block;
+  height: 68px;
+  width: 60px;
+  background-repeat: no-repeat;
+  top: 0px;
+  left: -70px;
+}
